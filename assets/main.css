@@ -3,7 +3,9 @@
     font-size: 16pt;
     overflow: hidden;
 }
-
+body{
+    background: rgb(0,0,0,0.05);
+}
 div {
     background: white;
     display: inline-block;
