@@ -1,5 +1,3 @@
-
-
 /* Parsing .csv */
     /*
     Papa.parse("https://zonefiles.io/a/ybrhv3hbgq7g6k882xjj/update/1/", {
@@ -47,8 +45,12 @@
    
     /* */
     function myFunction() {
-        var domain = document.createElement("a");
-        domain.innerText = database[secs];
+        var domain = document.createElement("div");
+        if(secs==""){
+            domain.innerText = database[secs/2];
+        }else {
+            domain.innerText = database[secs];
+        }
         domain.setAttribute("style", "left: " + Math.floor((Math.random() * window.innerWidth*0.92) + 1) + "px; top:" + Math.floor((Math.random() * window.innerHeight*0.96) + 1) + "px;");
         domain.setAttribute("id", secs);
         domain.setAttribute("class", "fade");
@@ -56,8 +58,16 @@
         domain.setAttribute("target", "_blank");
         document.body.appendChild(domain);
         var utterance = new SpeechSynthesisUtterance(database[secs]);
-        utterance.rate = 1.7;
+        utterance.rate = 1.5;
+        
         window.speechSynthesis.speak(utterance);
         secs++;
-        
+    
+        $(domain).hover(function(){
+            // let href = $(this).attr('href');
+            //console.log("got the mouse");
+            $("iframe").attr("src", database[secs]);
+        })
     }
+
+ 
