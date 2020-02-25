@@ -66,7 +66,7 @@
         $(domain).hover(function(){
             // let href = $(this).attr('href');
             //console.log("got the mouse");
-            $("iframe").attr("src", database[secs]);
+            $("iframe").attr("src", "http://"+database[secs]);
         })
     }
 
