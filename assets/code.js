@@ -51,7 +51,5 @@
         domain.setAttribute("href", "http://"+database[secs]);
         domain.setAttribute("target", "_blank");
         document.body.appendChild(domain);
-        //alert();
-        //$("#"+secs).toggle( "scale" );
         secs++;
     }
