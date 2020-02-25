@@ -46,14 +46,12 @@
         var domain = document.createElement("a");
         domain.innerText = database[secs];
         domain.setAttribute("style", "left: " + Math.floor((Math.random() * window.innerWidth*0.92) + 1) + "px; top:" + Math.floor((Math.random() * window.innerHeight*0.96) + 1) + "px;");
+        domain.setAttribute("id", secs);
         domain.setAttribute("class", "fade");
         domain.setAttribute("href", "http://"+database[secs]);
         domain.setAttribute("target", "_blank");
-
         document.body.appendChild(domain);
+        //alert();
+        $("#"+secs).toggle( "scale" );
         secs++;
-    }
-
-    function scale(){
-        $(this).toggle("scale");
     }
