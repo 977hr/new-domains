@@ -52,6 +52,6 @@
         domain.setAttribute("target", "_blank");
         document.body.appendChild(domain);
         //alert();
-        $("#"+secs).toggle( "scale" );
+        //$("#"+secs).toggle( "scale" );
         secs++;
     }

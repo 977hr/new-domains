@@ -20,7 +20,8 @@ a {
     padding: 4px 8px;
     text-decoration: none;
     color: black;
-/*    animation: fadeIn ease-in 0.5s;
+    transform: scale(0);
+    animation: fadeIn ease-in 0.5s;
     -webkit-animation: fadeIn ease-in 0.5s;
     -moz-animation: fadeIn ease-in 0.5s;
     -o-animation: fadeIn ease-in 0.5s;
@@ -28,46 +29,47 @@ a {
   }
   @keyframes fadeIn {
     0% {
-      opacity:0;
+        transform: scale(0);
     }
     100% {
-      opacity:1;
+        transform: scale(1);
     }
   }
   
   @-moz-keyframes fadeIn {
     0% {
-      opacity:0;
+        transform: scale(0);
     }
     100% {
-      opacity:1;
+        transform: scale(1);
     }
   }
   
   @-webkit-keyframes fadeIn {
     0% {
-      opacity:0;
+        transform: scale(0);
     }
     100% {
-      opacity:1;
+        transform: scale(1);
     }
   }
   
   @-o-keyframes fadeIn {
     0% {
-      opacity:0;
+        transform: scale(0);
     }
     100% {
-      opacity:1;
+        transform: scale(1);
     }
   }
   
   @-ms-keyframes fadeIn {
     0% {
-      opacity:0;
+        transform: scale(0);
     }
     100% {
-      opacity:1;
+        transform: scale(1);
+    }
   }
 
 .hide {
