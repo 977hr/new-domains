@@ -62,12 +62,13 @@
         
         window.speechSynthesis.speak(utterance);
         secs++;
-    
+    /*
         $(domain).hover(function(){
             // let href = $(this).attr('href');
             //console.log("got the mouse");
             $("iframe").attr("src", "http://"+database[secs]);
         })
+    */
     }
 
  
