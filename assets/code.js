@@ -1,4 +1,6 @@
-    /* Parsing .csv */
+
+
+/* Parsing .csv */
     /*
     Papa.parse("https://zonefiles.io/a/ybrhv3hbgq7g6k882xjj/update/1/", {
         download: true,
@@ -39,8 +41,10 @@
     shuffle(database);
 
     /* */
-    setInterval(myFunction, 800);
-    
+    setInterval(myFunction, 1000);
+
+    // Speak
+   
     /* */
     function myFunction() {
         var domain = document.createElement("a");
@@ -51,5 +55,9 @@
         domain.setAttribute("href", "http://"+database[secs]);
         domain.setAttribute("target", "_blank");
         document.body.appendChild(domain);
+        var utterance = new SpeechSynthesisUtterance(database[secs]);
+        utterance.rate = 1.7;
+        window.speechSynthesis.speak(utterance);
         secs++;
+        
     }
