@@ -1,4 +1,7 @@
-/* Parsing .csv */
+
+
+
+  /* Parsing .csv */
     /*
     Papa.parse("https://zonefiles.io/a/ybrhv3hbgq7g6k882xjj/update/1/", {
         download: true,
@@ -39,19 +42,24 @@
     shuffle(database);
 
     /* */
-    setInterval(myFunction, 1000);
+    setInterval(myFunction, 2400);
 
     // Speak
    
     /* */
+    
+
     function myFunction() {
+
         var domain = document.createElement("div");
         if(secs==""){
             domain.innerText = database[secs/2];
         }else {
             domain.innerText = database[secs];
         }
-        domain.setAttribute("style", "left: " + Math.floor((Math.random() * window.innerWidth*0.92) + 1) + "px; top:" + Math.floor((Math.random() * window.innerHeight*0.96) + 1) + "px;");
+        
+        domain.setAttribute("style", "left: " + Math.floor((Math.random() * window.innerWidth*0.92) + 1) + "px;");
+        
         domain.setAttribute("id", secs);
         domain.setAttribute("class", "fade");
         domain.setAttribute("href", "http://"+database[secs]);
@@ -60,7 +68,7 @@
         var utterance = new SpeechSynthesisUtterance(database[secs]);
         utterance.rate = 1.5;
         
-        window.speechSynthesis.speak(utterance);
+        //window.speechSynthesis.speak(utterance);
         secs++;
     /*
         $(domain).hover(function(){

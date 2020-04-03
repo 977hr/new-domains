@@ -75,13 +75,4 @@ div {
     opacity: 0;
     transition: opacity 1000ms;
 }
-iframe {
-    width: 100vw;
-    height: 100vh;
-    z-index: 10000;
-    border: none;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    z-index: -100;
-}
+
