@@ -19,7 +19,7 @@ div {
     display: inline-block;
     padding: 4px 8px;
     text-decoration: none;
-    color: white;
+   /* color: white;*/
     animation: fadeIn ease-in 2s;
     -webkit-animation: fadeIn ease-in 2s;
     -moz-animation: fadeIn ease-in 2s;

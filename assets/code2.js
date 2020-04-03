@@ -169,10 +169,14 @@ const app = new Vue({
         // var fontType = [ "Arial", "Verdana", "Helvetica", "Times"];
         // var rand = fontType[Math.floor(Math.random() * fontType.length)];
         // console.log(rand);
+
+        var textColor = [ "Red", "Blue", "White", "Lime", "Yellow", "Magenta", "WhiteSmoke","Aqua","LightPink",];
+        var textColorName = textColor[Math.floor(Math.random() * textColor.length)];
+        console.log(textColorName);
         
         app.generate();
 
-        domain.setAttribute("style", "z-indez: " + secs + ";font-family:"+ app.headingFont.family +"; font-weight:bold;");
+        domain.setAttribute("style", "z-index: " + secs + "; font-family:"+ app.headingFont.family +"; font-weight:bold; color: "+ textColorName +";");
      
 
         //domain.setAttribute("style", "left: " + Math.floor((Math.random() * window.innerWidth*0.92) + 1) + "px; top:" + Math.floor((Math.random() * window.innerHeight*0.96) + 1) + "px; font-family:"+ app.headingFont.family +"; font-weight:bold;");
