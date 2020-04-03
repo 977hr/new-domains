@@ -3,7 +3,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     overflow: hidden;
     cursor: crosshair;
     overflow: hidden;
@@ -41,6 +41,9 @@ div {
     0% {
         transform: scale(0);
         opacity: 1;
+    }
+    20% {
+        scale:(0.4) 
     }
     70% {
         scale:(0.5) 
